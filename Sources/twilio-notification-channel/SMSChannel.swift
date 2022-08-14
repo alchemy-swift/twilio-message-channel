@@ -1,3 +1,5 @@
+import Alchemy
+
 // MARK: SMSChannel
 
 public struct SMSChannel: Channel {
