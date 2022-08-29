@@ -2,19 +2,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "twilio-notification-channel",
+    name: "twilio-message-channel",
     platforms: [
         .macOS(.v12)
     ],
     products: [
-        .library(name: "twilio-notification-channel", targets: ["twilio-notification-channel"]),
+        .library(name: "TwilioMessageChannel", targets: ["TwilioMessageChannel"]),
     ],
     dependencies: [
         .package(url: "https://github.com/alchemy-swift/alchemy", branch: "main"),
     ],
     targets: [
         .target(
-            name: "twilio-notification-channel",
+            name: "TwilioMessageChannel",
             dependencies: [
                 .product(name: "Alchemy", package: "alchemy"),
             ]),
